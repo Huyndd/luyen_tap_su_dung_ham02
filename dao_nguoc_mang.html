@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược phần tử mảng</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Nhập số phần tử của mảng: ");
+        var arr1=[];
+        for(var i = 1; i <= a ;i++){
+            arr1[i]=parseInt(prompt("Nhập số thứ "+i+" :"));
+        }
+        function reverse(x) {
+            var arr2 = [];
+            for (var i = a; i >= 1; i--) {
+                arr2.push(x[i]);
+            }
+            return arr2;
+        }
+        alert("Mảng đảo thành: " + reverse(arr1));
+    </script>
+</body>
+</html>

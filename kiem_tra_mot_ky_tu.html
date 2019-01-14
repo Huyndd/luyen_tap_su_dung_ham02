@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra một ký tự trong mảng</title>
+</head>
+<body>
+<script>
+    function show() {
+        var a = prompt("Nhập số phần tử của mảng: ");
+        var myArr=[];
+        for(var i = 1; i <= a ;i++){
+            myArr[i]=parseInt(prompt("Nhập phần tử thứ "+i+" :"));
+        }
+        var element = prompt('Phần tử cần kiểm tra: ');
+        var count = 0;
+        for (var j = 0; j < myArr.length; j++) {
+            if (myArr[j] == element) {
+                count++;
+            }
+        }
+        if (count == -1){
+            return false;
+        }else {
+            alert(element + ' Xuất hiện ' + count + ' lần trong mảng');
+            return true;
+        }
+    }
+    show();
+</script>
+
+</body>
+</html>

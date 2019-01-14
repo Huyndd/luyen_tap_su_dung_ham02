@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nhỏ nhất trong mảng 3 số</title>
+</head>
+<body>
+    <script>
+        var arr =[];
+        for ( i = 1; i < 4; i++) {
+            arr[i] = parseInt(prompt("Nhập số thứ " + i))
+        }
+        function timMin(a) {
+            var min = a[1];
+            for(var i = 1; i < a.length; i++){
+                if(min>a[i]){
+                    min=a[i];
+                }
+            }
+            return "Số bé nhất trong mảng vừa nhập là: " + min;
+        }
+        alert(timMin(arr));
+    </script>
+</body>
+</html>
